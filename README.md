@@ -4,6 +4,10 @@
 |----|---|-----|------|
 |Muhammad Ikhsan Fakhrudin|312210019|TI.22.A2|Pemrograman|
 
+<img src=https://mmc.tirto.id/image/2017/08/30/logo-youtube-new-youtube.comcopy.jpg width="200px" >
+
+- [Link Dokumentasi Vidio](https://youtu.be/Juu1-4LzFIY)
+
 # SOAL UJIAN
 
 ![gambar 0](screenshot/gambar.png)
@@ -14,7 +18,20 @@
 
 # Kode Program
 
-- Didalam folder / package **Model** terdapat 1 file dengan nama daftar nilai. Dan didalam file tersebut telah terdapat beberapa function yang dibuat untuk menjalankan program tersebut.
+- Didalam folder / package **Model** terdapat 2 file dengan nama init dan daftar nilai. Serta didalam file tersebut telah terdapat beberapa function yang dibuat untuk menjalankan program tersebut.
+- Berikut adalah isi dari file `_init_.py`
+
+```
+def __init__(self, input_nama, input_nim, input_tugas, input_uts, input_uas,
+             input_akhir):
+    self._nama = input_nama
+    self._nim = input_nim
+    self._tugas = input_tugas
+    self._uts = input_uts
+    self._uas = input_uas
+    self._akhir = input_akhir
+```
+
 - Berikut adalah isi dari file `daftar_nilai.py`
 
 ```
@@ -103,7 +120,7 @@ def cari_data():
         print('-----------------------------------------------------------------')
     else:
         print("'{}' Tidak ditemukan.".format(nama))
-```
+```        
 
 - Disisi lain saya membuat folder / package **view** yang berisi file input_nilai.py dan view_nilai.py
 
